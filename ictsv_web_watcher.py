@@ -747,6 +747,13 @@ def load_event_state() -> dict[str, Any] | None:
 
 
 def save_event_state(ids: set[str], snapshots: dict[str, dict[str, Any]]) -> None:
+    existing = load_event_state()
+    if (
+        existing is not None
+        and existing["seen_ids"] == ids
+        and existing["event_snapshots"] == snapshots
+    ):
+        return
     data = {
         "seen_ids": sorted(ids),
         "event_snapshots": snapshots,
