@@ -1,0 +1,30 @@
+services:
+  - type: worker
+    name: ictsv-ticket-watcher
+    runtime: python
+    region: singapore
+    plan: 0.5c-512mb
+    buildCommand: python3 -m py_compile ictsv_web_watcher.py
+    startCommand: python3 ictsv_web_watcher.py
+    autoDeployTrigger: commit
+    envVars:
+      - key: BKNEXUS_TOKEN
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_CHAT_ID
+        sync: false
+      - key: BKNEXUS_EXTRA_PAYLOAD
+        sync: false
+      - key: TOKEN_FIELD
+        value: Token
+      - key: PAYLOAD_MODE
+        value: json
+      - key: POLL_SECONDS
+        value: "300"
+      - key: STATE_DIR
+        value: /var/data
+    disk:
+      name: watcher-data
+      mountPath: /var/data
+      sizeGB: 1
