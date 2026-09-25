@@ -1,0 +1,51 @@
+name: Kiem tra ve CTSV
+
+on:
+  schedule:
+    # Repository private: 30 phut/lan de nam trong 2.000 phut mien phi/thang.
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ictsv-ticket-watcher
+  cancel-in-progress: false
+
+jobs:
+  check-tickets:
+    runs-on: ubuntu-slim
+    timeout-minutes: 5
+    env:
+      BKNEXUS_TOKEN: ${{ secrets.BKNEXUS_TOKEN }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      BKNEXUS_EXTRA_PAYLOAD: ${{ secrets.BKNEXUS_EXTRA_PAYLOAD }}
+      TOKEN_FIELD: Token
+      PAYLOAD_MODE: json
+      STATE_DIR: .
+
+    steps:
+      - name: Lay ma nguon
+        uses: actions/checkout@v4
+
+      - name: Cai Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Kiem tra ve mot lan
+        run: python3 ictsv_web_watcher.py --once
+
+      - name: Luu trang thai neu co thay doi
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f .ictsv_web_watcher_state.json
+          if git diff --cached --quiet; then
+            echo "Trang thai khong thay doi."
+          else
+            git commit -m "Cap nhat trang thai ve [skip ci]"
+            git push
+          fi
