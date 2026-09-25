@@ -1,0 +1,187 @@
+{
+  "seen_ids": [
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "event_snapshots": {
+    "13": {
+      "title": "Khai giảng năm học 2026-2027",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 923,
+      "capacity": 10000,
+      "registered": 9077,
+      "start_time": "2026-09-05 06:30:00"
+    },
+    "3": {
+      "title": "Buổi 1: Sinh hoạt định hướng K71",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 500,
+      "registered": 500,
+      "start_time": "2026-09-07 07:45:00"
+    },
+    "4": {
+      "title": "Buổi 2: Sinh hoạt định hướng K71",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 13,
+      "capacity": 500,
+      "registered": 487,
+      "start_time": "2026-09-07 13:00:00"
+    },
+    "5": {
+      "title": "Buổi 3: Sinh hoạt định hướng K71",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 500,
+      "registered": 500,
+      "start_time": "2026-09-08 07:45:00"
+    },
+    "6": {
+      "title": "Buổi 4: Sinh hoạt định hướng K71",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 500,
+      "registered": 500,
+      "start_time": "2026-09-08 13:00:00"
+    },
+    "7": {
+      "title": "Buổi 5: Sinh hoạt định hướng K71",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 1000,
+      "registered": 1000,
+      "start_time": "2026-09-09 07:45:00"
+    },
+    "8": {
+      "title": "Buổi 6: Sinh hoạt định hướng K71",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 1000,
+      "registered": 1000,
+      "start_time": "2026-09-09 13:00:00"
+    },
+    "9": {
+      "title": "Buổi 7: Sinh hoạt định hướng K71",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 1,
+      "capacity": 1000,
+      "registered": 999,
+      "start_time": "2026-09-10 07:45:00"
+    },
+    "10": {
+      "title": "Buổi 8: Sinh hoạt định hướng K71",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 1000,
+      "registered": 1000,
+      "start_time": "2026-09-10 13:00:00"
+    },
+    "11": {
+      "title": "Buổi 9: Sinh hoạt định hướng K71",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 1000,
+      "registered": 1000,
+      "start_time": "2026-09-11 07:45:00"
+    },
+    "12": {
+      "title": "Buổi 10: Sinh hoạt định hướng K71",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 1000,
+      "registered": 1000,
+      "start_time": "2026-09-11 13:00:00"
+    },
+    "14": {
+      "title": "Buổi 11. Sinh hoạt chuyên đề K70 + định hướng K71",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 1000,
+      "registered": 1000,
+      "start_time": "2026-09-15 08:00:00"
+    },
+    "15": {
+      "title": "[Số 1] Tọa đàm xây dựng động lực học tập _Tháng 9.2026",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 1,
+      "capacity": 100,
+      "registered": 99,
+      "start_time": "2026-09-18 08:30:00"
+    },
+    "16": {
+      "title": "Lễ phát động Cuộc thi “Tìm hiểu pháp luật về Trật tự, an toàn giao thông đường bộ năm 2026”",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 50,
+      "registered": 50,
+      "start_time": "2026-09-23 14:30:00"
+    },
+    "20": {
+      "title": "THAM GIA CỔ VŨ HỘI THI \"TIẾNG HÁT KARAOKE CÔNG ĐOÀN\" NĂM 2026",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 200,
+      "registered": 200,
+      "start_time": "2026-09-25 07:30:00"
+    },
+    "19": {
+      "title": "[Số 2] Tọa đàm xây dựng động lực học tập _Tháng 9.2026",
+      "state": "ENDED",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 100,
+      "registered": 100,
+      "start_time": "2026-09-25 09:00:00"
+    },
+    "17": {
+      "title": "N1: Tình nguyện viên Lễ trao bằng tháng 9.2026",
+      "state": "FULL",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 30,
+      "registered": 30,
+      "start_time": "2026-09-26 06:30:00"
+    },
+    "18": {
+      "title": "N2: Tình nguyện viên Lễ trao bằng tháng 9.2026",
+      "state": "FULL",
+      "is_open": true,
+      "remaining": 0,
+      "capacity": 30,
+      "registered": 30,
+      "start_time": "2026-09-27 06:30:00"
+    }
+  },
+  "updated_at": "2026-09-25T15:41:18+00:00"
+}
